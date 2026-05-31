@@ -161,6 +161,7 @@ const readJSONBody = (req) => {
 };
 
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS === 'true' ? '/rakeradar/' : '/',
   plugins: [
     react(),
     {
