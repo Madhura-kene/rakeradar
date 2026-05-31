@@ -1,4 +1,4 @@
-# 🚆 RakeRadar - Pune Local Real-Time Crowd Mapping & AI Vision Platform
+# RakeRadar - Pune Local Real-Time Crowd Mapping & AI Vision Platform
 
 RakeRadar is a full-stack real-time passenger crowd mapping and routing platform for the **Pune-Lonavala suburban local division**, developed as part of a 3-hour rapid prototype hackathon. 
 
@@ -6,14 +6,14 @@ By bypassing proprietary, expensive hardware/IoT installations, RakeRadar provid
 
 ---
 
-## 👥 Our Team
+##  Our Team
 * **Madhura** — Lead Full-Stack Architect & API Engineer
 * **Anam** — UI/UX Architect & Visual Specialist
 * **Nabil** — AI Integration Engineer & Systems Specialist
 
 ---
 
-## 🌟 Key Product Features
+##  Key Product Features
 
 ### 1. Bidirectional Real-Time GPS Telemetry
 * **Live Server-Side Coordinates**: The Node.js dev server manages the concurrent positions and schedules of **two distinct trains** moving in opposite directions along the physical Pune-Lonavala route:
@@ -37,14 +37,14 @@ By bypassing proprietary, expensive hardware/IoT installations, RakeRadar provid
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 * **Frontend**: React 19, Vite, Leaflet Maps, vanilla CSS styling.
 * **Backend REST API**: Node.js REST controllers integrated inside the Vite developer process middleware.
 * **Design Language**: Glassmorphic neon dark-mode theme utilizing *Outfit* and *Inter* Google Fonts.
 
 ---
 
-## ⚙️ Quick Start & Installation
+##  Quick Start & Installation
 
 ### 1. Clone & Install Dependencies
 First, clone the repository and navigate to the project directory:
@@ -60,7 +60,7 @@ Launch the full-stack development environment:
 npm run dev
 ```
 The application and mock server will start on:
-👉 **[http://localhost:5174/](http://localhost:5174/)**
+ **[http://localhost:5174/](http://localhost:5174/)**
 
 ### 3. Verify Codebase Uptime
 Run ESLint and production compilers to ensure perfect health:
@@ -74,7 +74,7 @@ npm run build
 
 ---
 
-## 💡 How to Demo RakeRadar on Stage
+##  How to Demo RakeRadar on Stage
 
 1. **Bidirectional Switcher**: Open **[http://localhost:5174/](http://localhost:5174/)**. Toggle the focused rake in the top-left dashboard between **Up (99812)** and **Down (99815)**. The Leaflet camera will smoothly slide across the map to lock onto the selected train!
 2. **Instant Full Rake Seed (Bulk Scan)**: 
