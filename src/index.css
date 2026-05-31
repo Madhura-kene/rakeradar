@@ -1,0 +1,75 @@
+:root {
+  /* Premium Dark Theme Palette */
+  --bg-color: #0b0f19;
+  --bg-darker: #070a10;
+  --panel-bg: rgba(22, 33, 62, 0.45);
+  --panel-bg-solid: #121824;
+  --glass-bg: rgba(15, 23, 42, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  
+  --text-main: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --border-color: rgba(255, 255, 255, 0.08);
+  
+  /* Primary and Accent Colors */
+  --accent-orange: #ff7e47;
+  --accent-blue: #38bdf8;
+  --accent-blue-glow: rgba(56, 189, 248, 0.3);
+  --accent-emerald: #10b981;
+  
+  /* Crowd Severity Colors (HSL for fine-tuning) */
+  --crowd-low: #10b981;       /* Vibrant Green */
+  --crowd-medium: #f59e0b;    /* Warm Amber */
+  --crowd-high: #ef4444;      /* Deep Red */
+  
+  --crowd-low-glow: rgba(16, 185, 129, 0.25);
+  --crowd-medium-glow: rgba(245, 158, 11, 0.25);
+  --crowd-high-glow: rgba(239, 68, 68, 0.25);
+
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar for sleek UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Leaflet dark custom styles */
+.leaflet-container {
+  background: var(--bg-darker) !important;
+}
+
+/* Glassmorphism utility card */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}

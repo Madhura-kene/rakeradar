@@ -1,0 +1,94 @@
+.map-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.leaflet-map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Custom Station Marker */
+.station-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-darker);
+  border: 3px solid var(--accent-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-blue-glow);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.station-dot:hover {
+  transform: scale(1.35);
+  border-color: var(--text-main);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.train-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.train-up .train-icon {
+  animation: pulsingIconUp 2.2s infinite ease-in-out;
+}
+
+.train-down .train-icon {
+  animation: pulsingIconDown 2.2s infinite ease-in-out;
+}
+
+@keyframes pulsingIconUp {
+  0% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 2px var(--accent-blue-glow)); 
+  }
+  50% { 
+    transform: scale(1.15) translateY(-2px); 
+    filter: drop-shadow(0 0 12px var(--accent-blue)); 
+  }
+  100% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 2px var(--accent-blue-glow)); 
+  }
+}
+
+@keyframes pulsingIconDown {
+  0% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 2px var(--crowd-medium-glow)); 
+  }
+  50% { 
+    transform: scale(1.15) translateY(-2px); 
+    filter: drop-shadow(0 0 12px var(--accent-orange)); 
+  }
+  100% { 
+    transform: scale(1); 
+    filter: drop-shadow(0 0 2px var(--crowd-medium-glow)); 
+  }
+}
+
+/* Dark theme for Leaflet popups */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-main) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+}
+
+.leaflet-popup-close-button {
+  color: var(--text-muted) !important;
+  padding: 6px !important;
+}
